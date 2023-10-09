@@ -7,5 +7,10 @@ iMath - a Simple Math Assistant
     :maxdepth: 2
     :caption: Contents:
 
+    introduction
     symbols
+    contributing
+    glossary
+    changes
+    zbibliography
     

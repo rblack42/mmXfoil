@@ -23,9 +23,12 @@ extensions = [
         'sphinx.ext.autodoc',
         'sphinx.ext.viewcode',
         'sphinx.ext.autosummary',
+        'sphinxcontrib.bibtex',
         'sphinx_ext.tikzimage',
         'sphinx_ext.pylit',
 ]
+
+bibtex_bibfiles = ['references.bib']
 
 # Sphinx_ext.tikzimage extension
 # needs brew install poppler
