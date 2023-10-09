@@ -1,0 +1,15 @@
+Literate Programming and Sphinx
+###############################
+
+One of my goals in this project is to integrate |LP|_ with the *Sphinx* documentation system. Both of these projects seek to integrate documentation with software development, but they approach if from diferent directions. As far as I can see, |LP|_ really wants to document code at the final end of the project, not necessarily as it is being developed. Sphinx, on the other hand, is nothing nore than a tool for processing text files marked up with simple notations that direct the processing. There is not tight bond between the documentation and the code, although you can embed fragments of code in the documentation easily. I have used Sphinx to create lecture notes for my classes ever since the tool became available in 2008. 
+
+In order to add a |LP|_ feaure to *SPhinx*, we need to create a new *Directive* that will mark a block of text that can be processed by a custom component we will add the *Sphinx*. This is a standard extensoon feature of *SPhinx* so thi is not a new idea at all.
+
+Custom Directive
+****************
+
+*Sphinx* looks for lines that have the following pattern::
+
+	..	directive_name::
+
+
